@@ -20,7 +20,7 @@ const createNav = () => {
                 </div>
            </div>
             <ul class="links-container">
-                <li class="link-item"><a href="#" class="link">Home</a></li>
+                <li class="link-item"><a href="../public/index.html" class="link">Home</a></li>
                 <li class="link-item"><a href="#" class="link">Honda</a></li>
                 <li class="link-item"><a href="#" class="link">Suzuki</a></li>
                 <li class="link-item"><a href="#" class="link">Yamaha</a></li>
