@@ -48,3 +48,46 @@ const showAlert = (msg) => {
     }, 3000);
     return false;
 }
+
+let deleteAlert = document.querySelector('.delete-alert');
+const openDeletePopup = (id) => {
+    deleteAlert.style.display = 'flex';
+
+    let closeBtn = document.querySelector('.close-btn');
+    closeBtn.addEventListener('click', () => deleteAlert.style.display = null);
+
+    let deleteBtn = document.querySelector('.delete-btn');
+    deleteBtn.addEventListener('click', () => deleteItem(id));
+}
+
+const noProductImg = document.querySelector('.no-product-img');
+const productList = document.querySelectorAll('.product-card');
+
+const deleteItem = (id) => {
+    productList[id].style.display = 'none';
+    deleteAlert.style.display = 'none';
+    countItem();
+}
+
+function countItem() {
+    let count = 0;
+    productList.forEach((item, i) => {
+        if (productList[i].style.display === 'none') {
+            count++;
+            if (count === productList.length) {
+                noProductImg.classList.remove('hide');
+            }
+        }
+    })
+}
+
+
+const openBtn = document.querySelector('.open-btn');
+openBtn.addEventListener('click', () => {
+    location.href = 'product.html';
+})
+
+const editBtn = document.querySelector('.edit-btn');
+editBtn.addEventListener('click', () => {
+    location.href = 'addProduct.html';
+})
