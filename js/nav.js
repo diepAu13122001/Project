@@ -63,5 +63,5 @@ searchBtn.addEventListener('click', () => {
 })
 
 logoAction.addEventListener('click', () => {
-    location.href = 'home.html';
+    location.href = 'index.html';
 })
