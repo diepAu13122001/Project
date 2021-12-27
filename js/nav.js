@@ -16,15 +16,15 @@ const createNav = () => {
                             <button class="btn" id="user-btn">Log out</button>
                         </div>
                         </a>
-                    <a href="cart.html"><img src="img/cart.png" alt=""></a>
+                    <a href="../cart.html"><img src="img/cart.png" alt=""></a>
                 </div>
            </div>
             <ul class="links-container">
-                <li class="link-item"><a href="../public/home.html" class="link">Home</a></li>
-                <li class="link-item"><a href="../public/honda.html" class="link">Honda</a></li>
-                <li class="link-item"><a href="../public/suzuki.html" class="link">Suzuki</a></li>
-                <li class="link-item"><a href="../public/yamaha.html" class="link">Yamaha</a></li>
-                <li class="link-item"><a href="../public/aboutUs.html" class="link">About Us</a></li>
+                <li class="link-item"><a href="../index.html" class="link">Home</a></li>
+                <li class="link-item"><a href="../honda.html" class="link">Honda</a></li>
+                <li class="link-item"><a href="../suzuki.html" class="link">Suzuki</a></li>
+                <li class="link-item"><a href="../yamaha.html" class="link">Yamaha</a></li>
+                <li class="link-item"><a href="../aboutUs.html" class="link">About Us</a></li>
             </ul>
     `;
 }
