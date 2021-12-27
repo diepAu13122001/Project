@@ -61,7 +61,7 @@ const setupEventsForCart = () => {
             if (item.innerHTML < 3) {
                 item.innerHTML++;
                 totalBill += cost;
-                price[i].innerHTML = `${item.innerHTML * cost}`;
+                price[i].innerHTML = `${Math.round((item.innerHTML * cost) * 100) / 100}`;
                 document.querySelector('.bill').innerHTML = `${Math.round(totalBill * 100) / 100}`;
             }
         })

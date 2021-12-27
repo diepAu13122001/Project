@@ -16,7 +16,7 @@ const createNav = () => {
                             <button class="btn" id="user-btn">Log out</button>
                         </div>
                         </a>
-                    <a href="#"><img src="img/cart.png" alt=""></a>
+                    <a href="cart.html"><img src="img/cart.png" alt=""></a>
                 </div>
            </div>
             <ul class="links-container">
@@ -52,8 +52,9 @@ actionBtn.addEventListener('click', () => {
     })
 })
 
+
 searchBtn.addEventListener('click', () => {
-    if(searchKey.length){
+    if(searchBox.value.length){
         location.href = 'search.html';
     }
     else{
