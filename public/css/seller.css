@@ -1,4 +1,4 @@
-body{
+body {
     width: 100%;
     display: block;
     min-height: 90vh;
@@ -7,34 +7,35 @@ body{
     font-family: 'roboto', sans-serif;
 }
 
-.logo{
+.logo {
     margin: 20px auto 50px;
 }
-.hide{
+
+.hide {
     display: none;
 }
 
 /*become seller element*/
-.become-seller{
+.become-seller {
     border-radius: 10px;
     background: white;
     padding: 30px;
 }
 
-.heading{
+.heading {
     text-transform: capitalize;
     font-weight: 700;
     font-size: 18px;
-   margin-left: -135px;
+    margin-left: -135px;
 }
 
-.des{
+.des {
     margin: 20px 0;
     text-transform: capitalize;
     line-height: 25px;
 }
 
-.btn{
+.btn {
     border: none;
     outline: none;
     background: #383838;
@@ -47,15 +48,15 @@ body{
 }
 
 /*apply form*/
-.apply-form input,textarea{
+.apply-form input, textarea {
     font-weight: 500;
 }
 
-.apply-form input:not(input[type="checkbox"]){
+.apply-form input:not(input[type="checkbox"]) {
     width: 100%;
 }
 
-.apply-form textarea{
+.apply-form textarea {
     width: 100%;
     height: 90px;
     resize: none;
@@ -63,11 +64,11 @@ body{
 }
 
 input::placeholder,
-textarea::placeholder{
+textarea::placeholder {
     color: #383838;
 }
 
-.submit-btn{
+.submit-btn {
     margin: 10px 0;
     width: auto;
     padding: 0 40px;
@@ -76,7 +77,7 @@ textarea::placeholder{
 /*
 product listing
  */
-.add-product{
+.add-product {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -87,12 +88,12 @@ product listing
     margin-bottom: 50px;
 }
 
-.add-product-title{
+.add-product-title {
     text-transform: capitalize;
     color: #383838;
 }
 
-.no-product-img{
+.no-product-img {
     display: block;
     margin: auto;
 }
@@ -101,7 +102,7 @@ product listing
     display: none;
 }
 
-.product-container{
+.product-container {
     padding: 0;
 }
 
@@ -115,10 +116,11 @@ product listing
     color: #383838;
 }
 
-.product-card:hover .card-action-btn{
+.product-card:hover .card-action-btn {
     opacity: 1;
     pointer-events: all;
 }
+
 .card-action-btn {
     position: absolute;
     top: 10px;
@@ -136,15 +138,75 @@ product listing
     pointer-events: none;
 }
 
-.card-action-btn img{
+.card-action-btn img {
     height: 18px;
 }
 
-.open-btn{
+.open-btn {
     top: 60px;
 }
 
-.delete-popup-btn{
+.delete-popup-btn {
     top: 110px;
     background: #f25252;
+}
+
+.delete-alert {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 15px;
+}
+
+.close-btn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close-btn img{
+    width: 15px;
+}
+
+.delete-svg{
+   height: 60px;
+    display: block;
+    margin: 20px auto;
+}
+
+.text{
+    color: #383838;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.delete-btn{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #f25252;
+    margin: 15px auto 0;
+    display: block;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    color: white;
 }

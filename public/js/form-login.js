@@ -18,7 +18,7 @@ submitBtnLogin.addEventListener('click', () => {
     } else {
         // submit form
         loader.style.display = 'block';
-        location.href = 'index.html';
+        location.href = 'home.html';
     }
 })
 

@@ -12,6 +12,7 @@ productImages.forEach((item, i) => {
     })
 })
 
+
 // toggle color button
 const colorBtns = document.querySelectorAll('.color-radio-btn');
 let checkedBtn = 0;
@@ -21,5 +22,9 @@ colorBtns.forEach((item, i) =>{
         colorBtns[checkedBtn].classList.remove('check');
         item.classList.add('check');
         checkedBtn = i;
+        var id = item.textContent;
+        var src = document.getElementById(id).src;
+        productImageSlide.style.backgroundImage = `url('${src}')`;
     })
 })
+

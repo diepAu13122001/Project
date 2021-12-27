@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/product.css">
     <style>
-        .detail-des{
+        .detail-des {
             width: 80%;
             height: auto;
             display: block;
             margin: auto;
         }
-        .product-image{
+
+        .product-image {
             height: 250px;
         }
-        .product-card img{
+
+        .product-card img {
             display: block;
-            max-height:230px;
+            max-height: 230px;
         }
     </style>
 </head>
@@ -28,10 +30,24 @@
 <section class="product-details">
     <div class="image-slider">
         <div class="product-images">
-            <img src="img/XeMay/Yamaha/XeGa/NVX/NVX 155 THẾ HỆ I/NVX-Mat-Blue-001.png" class="active" alt="">
-            <img src="img/XeMay/Yamaha/XeGa/NVX/NVX 155 THẾ HỆ I/NVX-Mat-Blue-003.png" class="active" alt="">
-            <img src="img/XeMay/Yamaha/XeGa/NVX/NVX 155 THẾ HỆ I/NVX-Mat-Blue-004.png" class="active" alt="">
-            <img src="img/XeMay/Yamaha/XeGa/NVX/NVX 155 THẾ HỆ I/NVX-Mat-Blue-007.png" class="active" alt="">
+            <img src="https://vcdn-vnexpress.vnecdn.net/2021/09/16/Honda-SH350i-1-6696-1629862381-3284-1631784030.jpg"
+                 class="active" alt="" id="yellow">
+            <img src="https://cdn.honda.com.vn/motorbike-versions/September2021/LgVU0U8B1taflWV5UcTQ.png"
+                 class="active" alt="" id="blue">
+            <img src="https://vcdn-vnexpress.vnecdn.net/2021/09/16/Honda-SH350i-1-6696-1629862381-3284-1631784030.jpg"
+                 class="active" alt="" id="red-special">
+            <img src="https://img.websosanh.vn/v2/users/root_product/images/xe-may-honda-sh-150/nvaegd1qIoH9.jpg"
+                 class="active" alt="" id="red">
+            <img src="https://img.websosanh.vn/v2/users/root_product/images/xe-may-honda-sh-150/nvaegd1qIoH9.jpg"
+                 class="active" alt="">
+            <img src="https://d32zzgr0zt907h.cloudfront.net/vn/honda/sh150i/color/500x208/t/honda_sh150i_white.jpg"
+                 class="active" alt="" id="grey">
+            <img src="https://vcdn-vnexpress.vnecdn.net/2021/09/16/Honda-SH350i-1-6696-1629862381-3284-1631784030.jpg"
+                 class="active" alt="">
+            <img src="https://vcdn-vnexpress.vnecdn.net/2021/09/16/Honda-SH350i-1-6696-1629862381-3284-1631784030.jpg"
+                 class="active" alt="">
+            <img src="https://vcdn-vnexpress.vnecdn.net/2021/09/16/Honda-SH350i-1-6696-1629862381-3284-1631784030.jpg"
+                 class="active" alt="">
         </div>
     </div>
     <div class="details">
@@ -43,16 +59,24 @@
 
         <p class="product-sub-heading">select color</p>
 
-        <input type="radio" name="color" value="yellow" hidden id="yellow-color">
-        <label for="yellow-color" class="color-radio-btn check">blue-m</label>
-        <input type="radio" name="color" value="yellow" hidden id="blue-color">
-        <label for="blue-color" class="color-radio-btn">grey-m</label>
-        <input type="radio" name="color" value="yellow" hidden id="red-color">
-        <label for="red-color" class="color-radio-btn">red</label>
+        <input type="radio" name="color" value="yellow" hidden for="yellow">
+        <label for="yellow" class="color-radio-btn check">yellow</label>
 
+        <input type="radio" name="color" value="grey" hidden for="grey">
+        <label for="grey" class="color-radio-btn">grey</label>
 
-        <button class="btn cart-btn">add to cart</button>
-        <button class="btn">add to wishlist</button>
+        <input type="radio" name="color" value="red-special" hidden for="red-special">
+        <label for="red-special" class="color-radio-btn">red-special</label>
+
+        <input type="radio" name="color" value="red" hidden for="red">
+        <label for="red" class="color-radio-btn">red</label>
+
+        <input type="radio" name="color" value="blue" hidden for="blue">
+        <label for="blue" class="color-radio-btn">blue</label>
+        <div>
+            <button class="btn cart-btn">add to cart</button>
+            <button class="btn">add to wishlist</button>
+        </div>
     </div>
 </section>
 
@@ -73,12 +97,13 @@
         <div class="product-card">
             <div class="product-image">
                 <span class="discount-tag">5% off</span>
-                <img src="img/XeMay/HonDa/XeSo/Wave Alpha 110 (Phiên bản Giới Hạn)/z2999068339311_75b9f7e87c282abb3bf4e34c30bb3b60.jpg" class="product-thumb" alt="">
+                <img src="img/XeMay/HonDa/XeSo/Wave Alpha 110 (Phiên bản Giới Hạn)/z2999068339311_75b9f7e87c282abb3bf4e34c30bb3b60.jpg"
+                     class="product-thumb" alt="">
                 <button class="card-btn">add to wishlist</button>
             </div>
             <div class="product-info">
                 <h2 class="product-brand">Wave Alpha </h2>
-<!--                <p class="product-short-des">a short line about the cloth...</p>-->
+                <!--                <p class="product-short-des">a short line about the cloth...</p>-->
                 <span class="price">17.470.500<span class="actual-price">18.390.000</span></span>
             </div>
         </div>
@@ -90,31 +115,33 @@
             </div>
             <div class="product-info">
                 <h2 class="product-brand">Vision</h2>
-<!--                <p class="product-short-des">a short line about the cloth...</p>-->
+                <!--                <p class="product-short-des">a short line about the cloth...</p>-->
                 <span class="price">28.775.500<span class="actual-price">30.290.000</span></span>
             </div>
         </div>
         <div class="product-card">
             <div class="product-image">
                 <span class="discount-tag">5% off</span>
-                <img src="img/XeMay/Yamaha/XeSo/SIRIUS/SIRIUS PHIÊN BẢN PHANH CƠ/do-den-1.png" class="product-thumb" alt="">
+                <img src="img/XeMay/Yamaha/XeSo/SIRIUS/SIRIUS PHIÊN BẢN PHANH CƠ/do-den-1.png" class="product-thumb"
+                     alt="">
                 <button class="card-btn">add to wishlist</button>
             </div>
             <div class="product-info">
                 <h2 class="product-brand">SIRIUS</h2>
-<!--                <p class="product-short-des">a short line about the cloth...</p>-->
+                <!--                <p class="product-short-des">a short line about the cloth...</p>-->
                 <span class="price">19.323.000<span class="actual-price">20.340.000</span></span>
             </div>
         </div>
         <div class="product-card">
             <div class="product-image">
                 <span class="discount-tag">5% off</span>
-                <img src="img/XeMay/Yamaha/XeSo/Exciter/EXCITER 150 PHIÊN BẢN GP/Exciter-GP-001-1.png" class="product-thumb" alt="">
+                <img src="img/XeMay/Yamaha/XeSo/Exciter/EXCITER 150 PHIÊN BẢN GP/Exciter-GP-001-1.png"
+                     class="product-thumb" alt="">
                 <button class="card-btn">add to wishlist</button>
             </div>
             <div class="product-info">
                 <h2 class="product-brand">Exciter</h2>
-<!--                <p class="product-short-des">a short line about the cloth...</p>-->
+                <!--                <p class="product-short-des">a short line about the cloth...</p>-->
                 <span class="price">47.965.500 <span class="actual-price">50.490.000</span></span>
             </div>
         </div>
@@ -126,7 +153,19 @@
             </div>
             <div class="product-info">
                 <h2 class="product-brand">NVX</h2>
-<!--                <p class="product-short-des">a short line about the cloth...</p>-->
+                <!--                <p class="product-short-des">a short line about the cloth...</p>-->
+                <span class="price">49.628.000 <span class="actual-price">52.240.000</span></span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">5% off</span>
+                <img src="img/XeMay/Yamaha/XeGa/NVX/NVX 155 THẾ HỆ I/NVX-Mat-Blue-001.png" class="product-thumb" alt="">
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">NVX</h2>
+                <!--                <p class="product-short-des">a short line about the cloth...</p>-->
                 <span class="price">49.628.000 <span class="actual-price">52.240.000</span></span>
             </div>
         </div>
@@ -138,171 +177,93 @@
             </div>
             <div class="product-info">
                 <h2 class="product-brand">raiderR150</h2>
-<!--                <p class="product-short-des">a short line about the cloth...</p>-->
+                <!--                <p class="product-short-des">a short line about the cloth...</p>-->
                 <span class="price">47.490.500<span class="actual-price">49.990.000</span></span>
             </div>
         </div>
     </div>
 </section>
-<!--<section class="product">-->
-<!--    <h2 class="product-category">shoes</h2>-->
-<!--    <button class="pre-btn"><img src="img/arrow.png" alt=""></button>-->
-<!--    <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>-->
-<!--    <div class="product-container">-->
-<!--        <div class="product-card">-->
-<!--            <div class="product-image">-->
-<!--                <span class="discount-tag">50% off</span>-->
-<!--                <img src="img/card7.png" class="product-thumb" alt="">-->
-<!--                <button class="card-btn">add to wishlist</button>-->
-<!--            </div>-->
-<!--            <div class="product-info">-->
-<!--                <h2 class="product-brand">brand</h2>-->
-<!--                <p class="product-short-des">a short line about the cloth...</p>-->
-<!--                <span class="price">$20 <span class="actual-price">$40</span></span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="product-card">-->
-<!--            <div class="product-image">-->
-<!--                <span class="discount-tag">50% off</span>-->
-<!--                <img src="img/card8.png" class="product-thumb" alt="">-->
-<!--                <button class="card-btn">add to wishlist</button>-->
-<!--            </div>-->
-<!--            <div class="product-info">-->
-<!--                <h2 class="product-brand">brand</h2>-->
-<!--                <p class="product-short-des">a short line about the cloth...</p>-->
-<!--                <span class="price">$20 <span class="actual-price">$40</span></span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="product-card">-->
-<!--            <div class="product-image">-->
-<!--                <span class="discount-tag">50% off</span>-->
-<!--                <img src="img/card9.png" class="product-thumb" alt="">-->
-<!--                <button class="card-btn">add to wishlist</button>-->
-<!--            </div>-->
-<!--            <div class="product-info">-->
-<!--                <h2 class="product-brand">brand</h2>-->
-<!--                <p class="product-short-des">a short line about the cloth...</p>-->
-<!--                <span class="price">$20 <span class="actual-price">$40</span></span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="product-card">-->
-<!--            <div class="product-image">-->
-<!--                <span class="discount-tag">50% off</span>-->
-<!--                <img src="img/card10.png" class="product-thumb" alt="">-->
-<!--                <button class="card-btn">add to wishlist</button>-->
-<!--            </div>-->
-<!--            <div class="product-info">-->
-<!--                <h2 class="product-brand">brand</h2>-->
-<!--                <p class="product-short-des">a short line about the cloth...</p>-->
-<!--                <span class="price">$20 <span class="actual-price">$40</span></span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="product-card">-->
-<!--            <div class="product-image">-->
-<!--                <span class="discount-tag">50% off</span>-->
-<!--                <img src="img/card11.png" class="product-thumb" alt="">-->
-<!--                <button class="card-btn">add to wishlist</button>-->
-<!--            </div>-->
-<!--            <div class="product-info">-->
-<!--                <h2 class="product-brand">brand</h2>-->
-<!--                <p class="product-short-des">a short line about the cloth...</p>-->
-<!--                <span class="price">$20 <span class="actual-price">$40</span></span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="product-card">-->
-<!--            <div class="product-image">-->
-<!--                <span class="discount-tag">50% off</span>-->
-<!--                <img src="img/card12.png" class="product-thumb" alt="">-->
-<!--                <button class="card-btn">add to wishlist</button>-->
-<!--            </div>-->
-<!--            <div class="product-info">-->
-<!--                <h2 class="product-brand">brand</h2>-->
-<!--                <p class="product-short-des">a short line about the cloth...</p>-->
-<!--                <span class="price">$20 <span class="actual-price">$40</span></span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-<!--<section class="product">-->
-<!--    <h2 class="product-category">shirt</h2>-->
-<!--    <button class="pre-btn"><img src="img/arrow.png" alt=""></button>-->
-<!--    <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>-->
-<!--    <div class="product-container">-->
-<!--        <div class="product-card">-->
-<!--            <div class="product-image">-->
-<!--                <span class="discount-tag">50% off</span>-->
-<!--                <img src="img/card1.png" class="product-thumb" alt="">-->
-<!--                <button class="card-btn">add to wishlist</button>-->
-<!--            </div>-->
-<!--            <div class="product-info">-->
-<!--                <h2 class="product-brand">brand</h2>-->
-<!--                <p class="product-short-des">a short line about the cloth...</p>-->
-<!--                <span class="price">$20 <span class="actual-price">$40</span></span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="product-card">-->
-<!--            <div class="product-image">-->
-<!--                <span class="discount-tag">50% off</span>-->
-<!--                <img src="img/card2.png" class="product-thumb" alt="">-->
-<!--                <button class="card-btn">add to wishlist</button>-->
-<!--            </div>-->
-<!--            <div class="product-info">-->
-<!--                <h2 class="product-brand">brand</h2>-->
-<!--                <p class="product-short-des">a short line about the cloth...</p>-->
-<!--                <span class="price">$20 <span class="actual-price">$40</span></span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="product-card">-->
-<!--            <div class="product-image">-->
-<!--                <span class="discount-tag">50% off</span>-->
-<!--                <img src="img/card3.png" class="product-thumb" alt="">-->
-<!--                <button class="card-btn">add to wishlist</button>-->
-<!--            </div>-->
-<!--            <div class="product-info">-->
-<!--                <h2 class="product-brand">brand</h2>-->
-<!--                <p class="product-short-des">a short line about the cloth...</p>-->
-<!--                <span class="price">$20 <span class="actual-price">$40</span></span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="product-card">-->
-<!--            <div class="product-image">-->
-<!--                <span class="discount-tag">50% off</span>-->
-<!--                <img src="img/card4.png" class="product-thumb" alt="">-->
-<!--                <button class="card-btn">add to wishlist</button>-->
-<!--            </div>-->
-<!--            <div class="product-info">-->
-<!--                <h2 class="product-brand">brand</h2>-->
-<!--                <p class="product-short-des">a short line about the cloth...</p>-->
-<!--                <span class="price">$20 <span class="actual-price">$40</span></span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="product-card">-->
-<!--            <div class="product-image">-->
-<!--                <span class="discount-tag">50% off</span>-->
-<!--                <img src="img/card5.png" class="product-thumb" alt="">-->
-<!--                <button class="card-btn">add to wishlist</button>-->
-<!--            </div>-->
-<!--            <div class="product-info">-->
-<!--                <h2 class="product-brand">brand</h2>-->
-<!--                <p class="product-short-des">a short line about the cloth...</p>-->
-<!--                <span class="price">$20 <span class="actual-price">$40</span></span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="product-card">-->
-<!--            <div class="product-image">-->
-<!--                <span class="discount-tag">50% off</span>-->
-<!--                <img src="img/card6.png" class="product-thumb" alt="">-->
-<!--                <button class="card-btn">add to wishlist</button>-->
-<!--            </div>-->
-<!--            <div class="product-info">-->
-<!--                <h2 class="product-brand">brand</h2>-->
-<!--                <p class="product-short-des">a short line about the cloth...</p>-->
-<!--                <span class="price">$20 <span class="actual-price">$40</span></span>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-
+<section class="product">
+    <h2 class="product-category">Suzuki</h2>
+    <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
+    <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-image">
+                <a href="product.html">
+                    <span class="discount-tag">5% off</span>
+                    <img src="img/XeMay/suzuki/xetayga/address/mau-den.jpg" class="product-thumb" alt=""></a>
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Address</h2>
+                <!--                <p class="product-short-des">a short line about the cloth...</p>-->
+                <span class="price">26.875.500 <span class="actual-price">28.290.000</span></span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">5% off</span>
+                <img src="img/XeMay/suzuki/xetayga/address/mau-trang.jpg" class="product-thumb" alt="">
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">address</h2>
+                <!--                <p class="product-short-des">a short line about the cloth...</p>-->
+                <span class="price">26.875.500 <span class="actual-price">28.290.000</span></span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">5% off</span>
+                <img src="img/XeMay/suzuki/xetayga/burgman-street/360-1.png" class="product-thumb" alt="">
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">burgman street</h2>
+                <!--                <p class="product-short-des">a short line about the cloth...</p>-->
+                <span class="price">47.025.000 <span class="actual-price">49.500.000</span></span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">5% off</span>
+                <img src="img/XeMay/suzuki/xetayga/impulse/impulse-trang-nau-bac.png" class="product-thumb" alt="">
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">impulse</h2>
+                <!--                <p class="product-short-des">a short line about the cloth...</p>-->
+                <span class="price">30.390.500<span class="actual-price">31.990.000</span></span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">5% off</span>
+                <a href="product.html">
+                    <img src="img/XeMay/suzuki/xecontay/satriaF150/xanh-den.png" class="product-thumb" alt=""></a>
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">satriaF150</h2>
+                <!--                <p class="product-short-des">a short line about the cloth...</p>-->
+                <span class="price">49.390.500<span class="actual-price">51.990.000</span></span>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">5% off</span>
+                <img src="img/XeMay/suzuki/xecontay/raiderR150/mau-xanh-bac-den.png" class="product-thumb" alt="">
+                <button class="card-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">raiderR150</h2>
+                <!--                <p class="product-short-des">a short line about the cloth...</p>-->
+                <span class="price">47.490.500 <span class="actual-price">49.990.000</span></span>
+            </div>
+        </div>
+    </div>
+</section>
 
 <footer></footer>
 

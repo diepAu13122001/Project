@@ -48,3 +48,8 @@ const createFooter = () => {
 }
 
 createFooter();
+
+const logo = document.querySelector('.logo');
+logo.addEventListener('click', () => {
+    location.href = 'home.html';
+})
