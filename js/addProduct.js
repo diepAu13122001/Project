@@ -1,5 +1,10 @@
 let loader = document.querySelector('.loader');
 
+const logo = document.querySelector('.logo');
+logo.addEventListener('click', () => {
+    location.href = 'index.html';
+})
+
 // price inputs
 const actualPrice = document.querySelector('#actual-price');
 const discountPercentage = document.querySelector('#discount');

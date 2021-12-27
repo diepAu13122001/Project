@@ -3,7 +3,7 @@ const createNav = () => {
 
     nav.innerHTML = `
              <div class="nav">
-             <a href="../index.html"> <img src="img/dark-logo.png" class="brand-logo" alt=""> </a>
+             <a href="index.html"> <img src="img/dark-logo.png" class="brand-logo" alt=""> </a>
                 <div class="nav-items">
                     <div class="search">
                         <input type="text" class="search-box" placeholder="search brand, product">
@@ -16,15 +16,15 @@ const createNav = () => {
                             <button class="btn" id="user-btn">Log out</button>
                         </div>
                         </a>
-                    <a href="../cart.html"><img src="img/cart.png" alt=""></a>
+                    <a href="cart.html"><img src="img/cart.png" alt=""></a>
                 </div>
            </div>
             <ul class="links-container">
-                <li class="link-item"><a href="../index.html" class="link">Home</a></li>
-                <li class="link-item"><a href="../honda.html" class="link">Honda</a></li>
-                <li class="link-item"><a href="../suzuki.html" class="link">Suzuki</a></li>
-                <li class="link-item"><a href="../yamaha.html" class="link">Yamaha</a></li>
-                <li class="link-item"><a href="../aboutUs.html" class="link">About Us</a></li>
+                <li class="link-item"><a href="index.html" class="link">Home</a></li>
+                <li class="link-item"><a href="honda.html" class="link">Honda</a></li>
+                <li class="link-item"><a href="suzuki.html" class="link">Suzuki</a></li>
+                <li class="link-item"><a href="yamaha.html" class="link">Yamaha</a></li>
+                <li class="link-item"><a href="aboutUs.html" class="link">About Us</a></li>
             </ul>
     `;
 }
