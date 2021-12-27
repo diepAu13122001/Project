@@ -3,10 +3,10 @@
 
 // create data
 const data = [
-    {image: "img/card7.png", name: "BRAND", shortDes: "this is a short line about", itemCount: 3, price: 32},
-    {image: "img/card5.png", name: "BRAND", shortDes: "this is a short line about", itemCount: 1, price: 45.5},
-    {image: "img/card4.png", name: "BRAND", shortDes: "this is a short line about", itemCount: 3, price: 28.4},
-    {image: "img/card10.png", name: "BRAND", shortDes: "this is a short line about", itemCount: 1, price: 39.7}];
+    {image: "img/XeMay/Yamaha/XeTheThao/TFX 150/b02-3.png", name: "TFX 150", shortDes: "TFX 150", itemCount: 3, price: 32},
+    {image: "img/XeMay/Yamaha/XeTheThao/MT-03/2018_MT320_DPBMC_EUR_STU_001_03.png", name: "MT-03", shortDes: "MT-03", itemCount: 1, price: 45.5},
+    {image: "img/XeMay/Yamaha/XeSo/Exciter/EXCITER 150 PHIÊN BẢN MONSTER ENERGY YAMAHA MOTOGP/Exciter-Monster-005.png", name: "EXCITER 150", shortDes: "EXCITER 150 PHIÊN BẢN MONSTER ENERGY YAMAHA MOTOGP", itemCount: 3, price: 28.4},
+    {image: "img/XeMay/Yamaha/XeGa/Janus/JANUS PHIÊN BẢN TIÊU CHUẨN (STANDARD)/Janus-Red-Metallic-004.png", name: "JANUS  ", shortDes: "JANUS PHIÊN BẢN TIÊU CHUẨN (STANDARD)", itemCount: 1, price: 39.7}];
 
 const smProduct = document.querySelectorAll('.sm-product');
 const createSmallCards = (index) => {
