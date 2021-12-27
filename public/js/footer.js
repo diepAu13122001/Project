@@ -28,27 +28,22 @@ const createFooter = () => {
         </div>
     </div>
     <p class="footer-title">about company</p>
-    <p class="info">kfdjsglfjkhskjhflsdjkhflkjhlfdsjhakfjhsdkljfhalkjfh
-        fdskjhflkajfhklsdjhflkjsahdflkh fidskfjhksdjhflksjhdlkfjhslkfjhslkdjhlskdjh
-        fkdsjhkfhsdlkjhflksjhlkfjhslkdjhflksdjhfhgfdkh;k;ls;ljkdf;lkjg;ldkfj
-        jfgdwkjfkjgwfwlkjhfkhdsnkfhahdkjhsdfkjhfksjdh kfdshlkjhdskjfhkjwhlkfjhlkjh
-        fdshgfkjhlkdfhsalkjfhdslkjh kfhdslkjafhkdsjhklfjhsdlkjfhlkdsjahflkjhdslk
-        fkdjshkfjhsdkhfklhskfjhklsjfhkjhdsfkfhskahfkljhmcbnxscmbnslkdjh kfhdslkjfhkjsdhlkfjh?</p>
-    <p class="info">support emails - help@clothing.com,
-    customersupport@clothing.com</p>
-    <p class="info">telephone - 0903 753 125, 0223 563 569</p>
+    <p class="info"></p>
+    <p class="info">support emails: help@hdd.com -
+    customersupport@hdd.com</p>
+    <p class="info">telephone :  0342 327 725 - 0869 021 227</p>
     <div class="footer-social-container">
         <div>
             <a href="#" class="social-link">terms & services</a>
             <a href="#" class="social-link">privacy page</a>
         </div>
         <div>
-            <a href="#" class="social-link">instagram</a>
-            <a href="#" class="social-link">facebook</a>
-            <a href="#" class="social-link">youtube</a>
+            <a href="https://www.instagram.com" class="social-link">instagram</a>
+            <a href="https://www.facebook.com" class="social-link">facebook</a>
+            <a href="https://www.youtube.com" class="social-link">youtube</a>
         </div>
     </div>
-    <p class="footer-credit">Clothing, Best apparels online store</p>
+    
 `;
 }
 
