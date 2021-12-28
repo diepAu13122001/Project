@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+}
+
+.our-website, .our-team {
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.header-aboutUs {
+    padding-top: 60px;
+    color: #444;
+    font-size: 20px;
+    margin: auto;
+    line-height: 50px;
+}
+
+.paragraph {
+    width: 70%;
+    margin: auto;
+    padding: 35px 55px 25px;
+}
+
+.sub-container-aboutUs {
+    max-width: 1200px;
+    margin: auto;
+    padding: 38px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.member {
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.member:hover {
+    background: #ddd;
+    border-radius: 12px;
+}
+
+.member img {
+    width: 200px;
+    height: 200px;
+}
+
+.name-mb {
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.id-and-class {
+    font-style: italic;
+    color: #888;
+}
+
+.about {
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #4e4e4e;
+}
+
