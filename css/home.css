@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .hero-section .logo {
@@ -57,17 +58,16 @@
 
 .product-card {
     flex: 0 0 auto;
-    width: 350px;
-    height: 450px;
+    width: 300px;
+    height: 350px;
     margin-right: 40px;
 }
 
 .product-image {
     position: relative;
     width: 100%;
-    height: 350px;
+    height: 250px;
     overflow: hidden;
-
 }
 
 .product-thumb {
@@ -176,43 +176,114 @@
     opacity: 1;
 }
 
-.collection-container {
+.slide-container {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
-.collection {
-    position: relative;
-}
-
-.collection img {
+.img-slider {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.collection p {
+    height: 600px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    font-size: 50px;
-    text-transform: capitalize;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    transition: .7s;
 }
 
-.collection:nth-child(1) {
-    grid-column: span 2;
-    margin-bottom: 10px;
+.slide-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
 }
-.collection:nth-child(2) {
-    grid-column: span 2;
-    margin-bottom: 10px;
+
+.img-slide {
+    position: relative;
+    width: 800px;
+    height: 370px;
+    transition: .5s;
+    filter: saturate(50%);
 }
-.collection:nth-child(3) {
-    grid-column: span 2;
-    margin-bottom: 10px;
+
+.button-slider {
+    position: absolute;
+    width: 800px;
+    height: 370px;
+    transition: .5s;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.button-slider:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#slider-span1:target ~ .img-slider #img1,
+#slider-span1:target ~ .img-slider #button1 {
+    width: 900px;
+    height: 410px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span1:target ~ .img-slider #img1,
+#slider-span1:target ~ .img-slider #button1 {
+    width: 900px;
+    height: 410px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span2:target ~ .img-slider #img2,
+#slider-span2:target ~ .img-slider #button2 {
+    width: 900px;
+    height: 410px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span3:target ~ .img-slider #img3,
+#slider-span3:target ~ .img-slider #button3 {
+    width: 900px;
+    height: 410px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span4:target ~ .img-slider #img4,
+#slider-span4:target ~ .img-slider #button4 {
+    width: 900px;
+    height: 410px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span5:target ~ .img-slider #img5,
+#slider-span5:target ~ .img-slider #button5 {
+    width: 900px;
+    height: 410px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+/* image position*/
+#slider-span1:target ~ .img-slider {
+    left: 120%
+}
+
+#slider-span2:target ~ .img-slider {
+    left: 60%
+}
+
+
+#slider-span4:target ~ .img-slider {
+    left: -60%
+}
+
+#slider-span5:target ~ .img-slider {
+    left: -120%
 }
