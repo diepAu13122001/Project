@@ -3,10 +3,34 @@
 
 // create data
 const data = [
-    {image: "img/XeMay/Yamaha/XeTheThao/TFX 150/b02-3.png", name: "TFX 150", shortDes: "TFX 150", itemCount: 3, price: 32},
-    {image: "img/XeMay/Yamaha/XeTheThao/MT-03/2018_MT320_DPBMC_EUR_STU_001_03.png", name: "MT-03", shortDes: "MT-03", itemCount: 1, price: 45.5},
-    {image: "img/XeMay/Yamaha/XeSo/Exciter/EXCITER 150 PHIÊN BẢN MONSTER ENERGY YAMAHA MOTOGP/Exciter-Monster-005.png", name: "EXCITER 150", shortDes: "EXCITER 150 PHIÊN BẢN MONSTER ENERGY YAMAHA MOTOGP", itemCount: 3, price: 28.4},
-    {image: "img/XeMay/Yamaha/XeGa/Janus/JANUS PHIÊN BẢN TIÊU CHUẨN (STANDARD)/Janus-Red-Metallic-004.png", name: "JANUS  ", shortDes: "JANUS PHIÊN BẢN TIÊU CHUẨN (STANDARD)", itemCount: 1, price: 39.7}];
+    {
+        image: "img/XeMay/Yamaha/XeTheThao/TFX 150/b02-3.png",
+        name: "TFX 150",
+        shortDes: "TFX 150",
+        itemCount: 3,
+        price: 32000000
+    },
+    {
+        image: "img/XeMay/Yamaha/XeTheThao/MT-03/2018_MT320_DPBMC_EUR_STU_001_03.png",
+        name: "MT-03",
+        shortDes: "MT-03",
+        itemCount: 1,
+        price: 45500000
+    },
+    {
+        image: "img/XeMay/Yamaha/XeSo/Exciter/EXCITER 150 PHIÊN BẢN MONSTER ENERGY YAMAHA MOTOGP/Exciter-Monster-005.png",
+        name: "EXCITER 150",
+        shortDes: "EXCITER 150 PHIÊN BẢN MONSTER ENERGY YAMAHA MOTOGP",
+        itemCount: 3,
+        price: 28400000
+    },
+    {
+        image: "img/XeMay/Yamaha/XeGa/Janus/JANUS PHIÊN BẢN TIÊU CHUẨN (STANDARD)/Janus-Red-Metallic-004.png",
+        name: "JANUS  ",
+        shortDes: "JANUS PHIÊN BẢN TIÊU CHUẨN (STANDARD)",
+        itemCount: 1,
+        price: 69700000
+    }];
 
 const smProduct = document.querySelectorAll('.sm-product');
 const createSmallCards = (index) => {
@@ -16,14 +40,14 @@ const createSmallCards = (index) => {
          <img src="${productInfo.image}" class="sm-product-img" alt="">
          <div class="sm-text">
              <p class="sm-product-name">${productInfo.name}</p>
-             <p class="sm-des">${productInfo.shortDes}</p>
+          <p class="sm-type">Phan loai: ${productInfo.shortDes}</p>
          </div>
          <div class="item-counter">
              <button class="counter-btn decrement">-</button>
              <p class="item-count">${productInfo.itemCount}</p>
              <button class="counter-btn increment">+</button>
          </div>
-             <p class="sm-price" data-price="${productInfo.price}">${Math.round((productInfo.itemCount * productInfo.price) * 100) / 100}</p>
+         <p class="sm-price" data-price="${productInfo.price}">${Math.round((productInfo.itemCount * productInfo.price) * 100) / 100}</p>
              <button class="sm-delete-btn"><img src="img/close.png" alt=""></button>
      </div>
     `;
