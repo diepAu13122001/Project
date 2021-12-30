@@ -22,7 +22,7 @@ const data = [
         name: "EXCITER 150",
         shortDes: "EXCITER 150 PHIÊN BẢN MONSTER ENERGY YAMAHA MOTOGP",
         itemCount: 3,
-        price: 28400000
+        price: 58500000
     },
     {
         image: "img/XeMay/Yamaha/XeGa/Janus/JANUS PHIÊN BẢN TIÊU CHUẨN (STANDARD)/Janus-Red-Metallic-004.png",
@@ -36,20 +36,22 @@ const smProduct = document.querySelectorAll('.sm-product');
 const createSmallCards = (index) => {
     let productInfo = data[index];
     smProduct[index].innerHTML = `
-     <div class="sm-product">
-         <img src="${productInfo.image}" class="sm-product-img" alt="">
-         <div class="sm-text">
-             <p class="sm-product-name">${productInfo.name}</p>
-          <p class="sm-type">Phan loai: ${productInfo.shortDes}</p>
-         </div>
-         <div class="item-counter">
-             <button class="counter-btn decrement">-</button>
-             <p class="item-count">${productInfo.itemCount}</p>
-             <button class="counter-btn increment">+</button>
-         </div>
-         <p class="sm-price" data-price="${productInfo.price}">${Math.round((productInfo.itemCount * productInfo.price) * 100) / 100}</p>
-             <button class="sm-delete-btn"><img src="img/close.png" alt=""></button>
-     </div>
+                <div class="avatar">
+                    <img src="${productInfo.image}" class="sm-product-img" alt="">
+                    <button class="sm-delete-btn"><img src="img/close.png" alt=""></button>
+                </div>
+                <div class="sm-text">
+                    <p class="sm-product-name">${productInfo.name}</p>
+                    <p class="sm-type">Phân loại: ${productInfo.shortDes}</p>
+                </div>
+                <div class="item-counter">
+                    <button class="counter-btn decrement">-</button>
+                    <p class="item-count">${productInfo.itemCount}</p>
+                    <button class="counter-btn increment">+</button>
+                </div>
+                <div class="price">
+                    <p class="sm-price" data-price="${productInfo.price}">${Math.round((productInfo.itemCount * productInfo.price) * 100) / 100}</p>
+                </div>
     `;
 }
 
